@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Saludos</title>
     </head>
     <body>
         Envia un saludo: <input type="text" name="saludo" id="saludo">
