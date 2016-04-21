@@ -10,8 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        Envia un saludo: <input type="text" name="saludo" id="saludo">
+        <button type="submit" id="enviar_saludo" value="enviar">Enviar</button>
     </body>
 </html>
