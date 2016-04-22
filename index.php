@@ -7,11 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Saludos</title>
     </head>
     <body>
-        <?php
-        
-        ?>
+
+        Envia un saludo: <input type="text" name="saludo" id="saludo">
+        <button type="submit" id="enviar_saludo" value="enviar">Enviar</button>
+
     </body>
 </html>
