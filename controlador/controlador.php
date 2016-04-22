@@ -12,23 +12,26 @@
  * @author eduardo
  */
 
+$saludo = filter_input(INPUT_GET, "enviar_saludo", FILTER_SANITIZE_STRING);
+
 namespace ProyectoIntegracion\controlador;
 
 class controlador {
 
-    private $saludo = "";
+protected $saludo = "";
     
     public function setSaludo($saludo){
         
+        $this->saludo = $saludo;
+       
+        
+    }
+    
+    public function formatSaludo($saludo){
         
         return $saludo;
-        
     }
     
-    public function formatSaludo(){
-        
-        
-    }
     
-    require '../vista/plantillaSaludo.php';
 }
+require '../vista/vistaSaludo.php';

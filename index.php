@@ -10,9 +10,9 @@ and open the template in the editor.
         <title>Saludos</title>
     </head>
     <body>
-
-        Envia un saludo: <input type="text" name="saludo" id="saludo">
-        <button type="submit" id="enviar_saludo" value="enviar">Enviar</button>
-
+        <form action="controlador/controlador.php" method="get">
+            Envia un saludo: <input type="text" name="saludo"> </br>
+        <input type="submit" id="enviar_saludo" value="Enviar"></button>
+             </form>
     </body>
 </html>
