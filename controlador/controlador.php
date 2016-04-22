@@ -10,28 +10,22 @@
  * Description of controlador
  *
  * @author eduardo
+ * 
  */
 
-$saludo = filter_input(INPUT_GET, "enviar_saludo", FILTER_SANITIZE_STRING);
+require "../vendor/autoload.php";
 
-namespace ProyectoIntegracion\controlador;
 
-class controlador {
+$saludoRecibido = $_GET['saludo'];
 
-protected $saludo = "";
-    
-    public function setSaludo($saludo){
-        
-        $this->saludo = $saludo;
-       
-        
-    }
-    
-    public function formatSaludo($saludo){
-        
-        return $saludo;
-    }
-    
-    
-}
+
+
+use ProyectoIntegracion\modelo\saludar;
+
+$objetoSaludo = new saludar;
+$objetoSaludo->setSaludo($saludoRecibido);
+
+$saludo = $objetoSaludo->formatSaludo();
+
 require '../vista/vistaSaludo.php';
+
